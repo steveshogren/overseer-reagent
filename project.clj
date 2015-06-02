@@ -10,6 +10,7 @@
                  [markdown-clj "0.9.66"]
                  [environ "1.0.0"]
                  [compojure "1.3.4"]
+                 [org.clojure/core.memoize "0.5.6"]
                  [ring/ring-defaults "0.1.5"]
                  [ring/ring-session-timeout "0.1.0"]
                  [metosin/ring-middleware-format "0.6.0"]
@@ -38,9 +39,9 @@
                  [ring/ring-json "0.3.1"]
                  [jdbc-ring-session "0.2"]
                  [clj-time "0.8.0"]
+                 [com.cemerick/url "0.1.1"]
                  [heroku-database-url-to-jdbc "0.2.2"]
                  [prismatic/schema "0.4.2"]
-
                  ]
 
   :min-lein-version "2.0.0"

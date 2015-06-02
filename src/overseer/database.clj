@@ -1,5 +1,5 @@
 (ns overseer.database
-  (:require [com.ashafa.clutch :as couch]
+  (:require 
             [overseer.db :as db]
             [overseer.helpers :refer :all]
             [overseer.dates :refer :all]

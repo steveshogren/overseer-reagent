@@ -6,7 +6,6 @@
             [cemerick.url :as url]
             [clojure.tools.trace :as trace]
             [heroku-database-url-to-jdbc.core :as h]
-            [com.ashafa.clutch :as couch]
             [environ.core :refer [env]]
             [clj-time.coerce :as timec]
             [clj-time.format :as timef]

@@ -1,5 +1,5 @@
 (ns overseer.dates
-  (:require [com.ashafa.clutch :as couch]
+  (:require 
             [overseer.db :as db]
             [overseer.helpers :refer :all]
             [clojure.tools.trace :as trace]
