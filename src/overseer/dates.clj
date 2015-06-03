@@ -1,6 +1,6 @@
 (ns overseer.dates
   (:require 
-            [overseer.db :as db]
+            [overseer.db.db :as db]
             [overseer.helpers :refer :all]
             [clojure.tools.trace :as trace]
             [clj-time.format :as f]

@@ -1,5 +1,5 @@
 (ns overseer.attendance
-  (:require [overseer.db :as db]
+  (:require [overseer.db.db :as db]
             [overseer.helpers :refer :all]
             [overseer.dates :refer :all]
             [overseer.database :refer :all]

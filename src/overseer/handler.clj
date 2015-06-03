@@ -1,8 +1,8 @@
 (ns overseer.handler
   (:require [compojure.core :refer [defroutes routes wrap-routes]]
             [overseer.routes.home :refer [home-routes]]
-            
             [overseer.middleware :as middleware]
+            [overseer.db.db :as db]
             [overseer.session :as session]
             [compojure.route :as route]
             [taoensso.timbre :as timbre]
@@ -37,6 +37,7 @@
    an app server such as Tomcat
    put any initialization code here"
   []
+  (db/init-pg)
   (timbre/set-config!
     [:appenders :rotor]
     {:min-level             :info
@@ -66,7 +67,6 @@
 
 (def app
   (-> (routes
-        
         (wrap-routes home-routes middleware/wrap-csrf)
         base-routes)
       middleware/wrap-base))

@@ -13,7 +13,7 @@
             [ring.adapter.jetty :as jetty]
             [ring.util.response :as resp]
             [clojure.tools.trace :as trace]
-            [overseer.db :as db]
+            [overseer.db.db :as db]
             [overseer.database :as data]
             [overseer.dates :as dates]
             [overseer.attendance :as att]
@@ -50,7 +50,7 @@
   (layout/render "home.html"))
 
 (defroutes home-routes
-  (GET "/" [] (friend/authenticated (io/resource "index.html")))
+  (GET "/" [] (friend/authenticated (home-page)))
   (GET "/resetdb" []
        (friend/authorize #{::super} ;; (db/reset-db)
                          (resp/redirect "/")))
