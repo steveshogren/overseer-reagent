@@ -1,6 +1,5 @@
 (ns overseer.database
-  (:require 
-            [overseer.db.db :as db]
+  (:require [overseer.db.db :as db]
             [overseer.helpers :refer :all]
             [overseer.dates :refer :all]
             [clojure.tools.trace :as trace]

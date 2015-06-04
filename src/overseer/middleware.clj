@@ -69,6 +69,8 @@
   (wrap-restful-format handler :formats [:json-kw :transit-json :transit-msgpack]))
 
 (defn wrap-base [handler]
+  (println "====================")
+  (db/init-pg)
   (-> handler
       (friend/authenticate {:credential-fn (partial creds/bcrypt-credential-fn users)
                             :allow-anon? true

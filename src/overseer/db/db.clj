@@ -4,7 +4,6 @@
    [java.sql PreparedStatement])
   (:require [carica.core :as c]
             [cemerick.url :as url]
-            [clojure.tools.trace :as trace]
             [heroku-database-url-to-jdbc.core :as h]
             [environ.core :refer [env]]
             [clj-time.coerce :as timec]

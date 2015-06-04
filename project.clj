@@ -40,6 +40,7 @@
                  [jdbc-ring-session "0.2"]
                  [clj-time "0.8.0"]
                  [com.cemerick/url "0.1.1"]
+                 [org.clojure/tools.trace "0.7.8"]
                  [heroku-database-url-to-jdbc "0.2.2"]
                  [prismatic/schema "0.4.2"]
                  ]

@@ -37,6 +37,7 @@
    an app server such as Tomcat
    put any initialization code here"
   []
+  (println "-----------TEST-----------")
   (db/init-pg)
   (timbre/set-config!
     [:appenders :rotor]
